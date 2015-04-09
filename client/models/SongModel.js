@@ -17,10 +17,14 @@ var SongModel = Backbone.Model.extend({
     // Triggering an event here will also trigger the event on the collection
     this.trigger('ended', this);
   },
+  incrementCount: function(){
+    this.set('playcount', this.get('playcount')+1);
+  },
   defaults: {
     "artist": "unknown",
     "title": "unknown",
-    "url": "unknown"
+    "url": "unknown",
+    "playcount" : 0
   }
 
 });

@@ -5,11 +5,9 @@ var SongQueueView = Backbone.View.extend({
   initialize: function() {
     this.render();
     this.collection.on('add remove', function(){
-      // console.log('event fired');
       this.render();
     }, this);
 
-    this.collection.on('all',function(e){console.log(e);});
   },
 
   render: function() {
