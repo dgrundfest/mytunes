@@ -6,6 +6,7 @@ var SongQueue = Songs.extend({
       if(this.length === 1){
         this.playFirst();
       }
+      // console.log(this);
     },this);
 
     // this.on('all', function(eventname) {
